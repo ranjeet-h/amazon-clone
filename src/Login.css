@@ -1,9 +1,91 @@
-.login__logo{
-    margin-top:20px;
-    margin-bottom: 20px;
-    object-fit: contain;
-    width:100px;
-    margin-right: auto;
-    margin-left: auto;
-    
+.login {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login__container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.login__container > h1 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.login__container > form > h5 {
+  margin-bottom: 5px;
+}
+
+.login__container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.login__container > form > input:focus {
+  box-shadow: 0 0 10px#f3A847;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #f3a847;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+.login__sigInButton {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.login__sigInButton:focus {
+  box-shadow: 0 0 10px#f3A847;
+}
+
+.login__registerButton {
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  border-color: darkgray;
+
+  margin-top: 10px;
+}
+
+.login__registerButton:hover {
+  background-color: #dcdfe3;
+}
+
+.login__registerButton:focus {
+  box-shadow: 0 0 10px#f3A847;
 }
